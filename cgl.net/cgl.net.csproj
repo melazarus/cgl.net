@@ -47,6 +47,7 @@
     <Compile Include="Domain\TextBitmap.cs" />
     <Compile Include="Domain\TextImage.cs" />
     <Compile Include="Domain\TextLayer.cs" />
+    <Compile Include="Domain\TextPixel.cs" />
     <Compile Include="Interfaces\IWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

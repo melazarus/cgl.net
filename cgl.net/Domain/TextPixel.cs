@@ -2,7 +2,7 @@
 
 namespace cgl.net
 {
-    public class TextPixel : ICloneable
+    public class TextPixel : ICloneable, IComparable<TextPixel>
     {
         public TextPixel(char? character, ConsoleColor? backgroundColor, ConsoleColor? foregroundColor)
         {
@@ -29,6 +29,14 @@ namespace cgl.net
         public object Clone()
         {
             return new TextPixel(Character, BackgroundColor, ForegroundColor);
+        }
+
+
+        public int CompareTo(TextPixel other)
+        {
+            return (other.BackgroundColor.Equals(BackgroundColor) &&
+                    other.ForegroundColor.Equals(ForegroundColor) &&
+                    other.Character.Equals(Character));
         }
     }
 }
