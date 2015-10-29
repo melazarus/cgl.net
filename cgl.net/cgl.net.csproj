@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\TextBitmapExtentions.cs" />
+    <Compile Include="Concrete\TextImageExtentions.cs" />
+    <Compile Include="Concrete\TextLayerExtentions.cs" />
+    <Compile Include="Concrete\Window.cs" />
+    <Compile Include="Domain\TextBitmap.cs" />
+    <Compile Include="Domain\TextImage.cs" />
+    <Compile Include="Domain\TextLayer.cs" />
+    <Compile Include="Interfaces\IWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
