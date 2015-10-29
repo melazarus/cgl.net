@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace cgl.net.Domain
+namespace cgl.net
 {
-    class TextBitmap
+    public class TextBitmap: ICloneable, IEquatable<TextBitmap>
     {
+        public object Clone()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Equals(TextBitmap other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
