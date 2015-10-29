@@ -2,7 +2,7 @@
 
 namespace cgl.net
 {
-    public class TextPixel : ICloneable, IComparable<TextPixel>
+    public class TextPixel : ICloneable, IEquatable<TextPixel>
     {
         public TextPixel(char? character, ConsoleColor? backgroundColor, ConsoleColor? foregroundColor)
         {
@@ -30,13 +30,12 @@ namespace cgl.net
         {
             return new TextPixel(Character, BackgroundColor, ForegroundColor);
         }
-
-
-        public int CompareTo(TextPixel other)
+        
+        public bool Equals(TextPixel other)
         {
             return (other.BackgroundColor.Equals(BackgroundColor) &&
-                    other.ForegroundColor.Equals(ForegroundColor) &&
-                    other.Character.Equals(Character));
+                       other.ForegroundColor.Equals(ForegroundColor) &&
+                       other.Character.Equals(Character));
         }
     }
 }
